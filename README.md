@@ -1,3 +1,47 @@
+# Next App Restaurant Project
+
+This project is a web application built with Next.js for managing restaurant data. It allows users to view a list of restaurant and delete existing ones.
+
+## Features
+
+- Display a list of restaurants with details such as name, address, contact information, and website.
+- Delete existing restaurants from the list.
+- Stylish user interface with responsive design.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building server-side rendered and static web applications.
+- **React**: A JavaScript library for building user interfaces.
+- **MongoDB**: A NoSQL database used for storing restaurant data.
+- **Mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js.
+- **Tailwind CSS**: A utility-first CSS framework used for styling the application.
+- **Font Awesome**: A library of icons used for UI elements.
+- **Node.js**: A JavaScript runtime environment for building server-side applications.
+
+## Project Structure
+
+- **components**: Contains React components used throughout the application.
+  - `RestaurantCard.js`: Component for displaying individual restaurant information.
+  - `RestaurantPage.js`: Component for rendering a list of restaurants.
+  - `RootLayout.js`: Component for defining the layout structure of the application.
+  - `DeleteBlock.js`: Component for handling restaurant deletion functionality.
+- **models**: Contains the MongoDB schema definition for the `Restaurant` model.
+  - `Restaurant.js`: Defines the schema for storing restaurant data in the database.
+- **pages**: Contains Next.js pages for routing and server-side rendering.
+  - `index.js`: Home page component that fetches and displays a list of restaurants.
+- **api**: Contains serverless functions for handling API requests.
+  - `Restaurants.js`: Route for retrieving a list of restaurants.
+  - `Restaurants/[id].js`: Route for deleting a specific restaurant by ID.
+
+## Setup Instructions
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Set up MongoDB and configure the connection in `models/Restaurant.js`.
+4. Start the development server with `npm run dev`.
+5. Access the application at `http://localhost:3000`.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
